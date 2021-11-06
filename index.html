@@ -15,6 +15,23 @@
       <div class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
+          <form>
+            <label for="charachterNumber">Number of Charachters</label>
+            <input type="range" min="8" max="128" value="10" id="characterRange">
+            <input type="number" min="8" max="128" value = "10" id="characterNumber">
+            <br/>
+            <label for="includeLowercase">Include Lowercase</label>
+            <input type="checkbox" id="includeLowercase">
+            <br/>
+            <label for="includeUppercase">Include Uppercase</label>
+            <input type="checkbox" id="includeUppercase">
+            <br/>
+            <label for="includeNumbers">Include Numbers</label>
+            <input type="checkbox" id="includeNumbers">
+            <br/>
+            <label for="includeSymbols">Include Special Characters</label>
+            <input type="checkbox" id="includeSymbols">
+          </form>
         </div>
         <div class="card-body">
           <textarea
@@ -29,6 +46,6 @@
         </div>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </body>
 </html>
