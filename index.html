@@ -12,26 +12,23 @@
       <header>
         <h1>Password Generator</h1>
       </header>
-      <div class="card">
+      <form><div class="card">
         <div class="card-header">
           <h2>Generate a Password</h2>
-          <form>
-            <label for="charachterNumber">Number of Charachters</label>
-            <input type="range" min="8" max="128" value="10" id="characterRange">
-            <input type="number" min="8" max="128" value = "10" id="characterNumber">
-            <br/>
-            <label for="includeLowercase">Include Lowercase</label>
-            <input type="checkbox" id="includeLowercase">
+            <label for="characterNumber">Number of Characters</label>
+            <input type="range" min="8" max="128" value="10" 
+            id="characterRange"/>
+            <input type="number" min="8" max="128" value="10" 
+            id="characterNumber"/>
             <br/>
             <label for="includeUppercase">Include Uppercase</label>
-            <input type="checkbox" id="includeUppercase">
+            <input type="checkbox" id="includeUppercase"/>
             <br/>
             <label for="includeNumbers">Include Numbers</label>
-            <input type="checkbox" id="includeNumbers">
+            <input type="checkbox" id="includeNumbers"/>
             <br/>
             <label for="includeSymbols">Include Special Characters</label>
-            <input type="checkbox" id="includeSymbols">
-          </form>
+            <input type="checkbox" id="includeSymbols"/>
         </div>
         <div class="card-body">
           <textarea
@@ -42,8 +39,9 @@
           ></textarea>
         </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+          <button type="submit" id="generate" class="btn">Generate Password</button>
         </div>
+      </form>
       </div>
     </div>
     <script src="script.js" defer></script>
